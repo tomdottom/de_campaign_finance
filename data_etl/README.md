@@ -15,25 +15,25 @@ pip install -r requirements.txt
 ### Printing to stdout
 
 ```
-python -m etl ./example_data/input_file.xls
+python extract_contribution_list.py ./example_data/input_file.xls
 ```
 
 Or
 
 ```
-cat ./example_data/input_file.xls | python -m etl
+cat ./example_data/input_file.xls | python extract_contribution_list.py
 ```
 
 ### Saving to new file
 
 ```
-python -m etl ./example_data/input_file.xls ./example_data/output.txt
+python extract_contribution_list.py ./example_data/input_file.xls ./example_data/output.txt
 ```
 
 Or
 
 ```
-cat ./example_data/input_file.xls | python -m etl > ./example_data/output.txt
+cat ./example_data/input_file.xls | python extract_contribution_list.py > ./example_data/output.txt
 ```
 
 ## Testing
